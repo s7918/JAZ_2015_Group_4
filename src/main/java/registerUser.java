@@ -58,10 +58,10 @@ public class registerUser extends HttpServlet {
                 toPage.println("Użytkownik " + firstName + " " + lastName + " został zarejestrowany.");
                 System.out.println("pusty sesyjny mail. Ile zarejestrowanych:" + users.size()+ session.getAttribute("mail"));
         
-            } else if (session.getAttribute("mail").toString() != mail) {
+            } else if (session.getAttribute("mail") != mail) {
                 users.add(u);
                 toPage.println("Użytkownik " + firstName + " " + lastName + " został zarejestrowany.");
-                System.out.println("różny sesyjny mailIle zarejestrowanych:" + users.size()+ session.getAttribute("mail")+mail);
+                System.out.println("różny sesyjny mail. Ile zarejestrowanych:" + users.size()+ session.getAttribute("mail")+mail);
         
             } else {
                 response.sendRedirect("sessionLimit.html");
