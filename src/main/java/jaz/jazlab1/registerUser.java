@@ -1,3 +1,5 @@
+package jaz.jazlab1;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -53,7 +55,7 @@ public class registerUser extends HttpServlet {
             response.sendRedirect("limitReached.html");
         } else {
             if (session.getAttribute("mail") ==null || session.getAttribute("mail").equals("")) {
-                session.setAttribute("mail", mail);
+                session.setAttribute("mail", mail.toLowerCase());
                 users.add(u);
                 toPage.println("Użytkownik " + firstName + " " + lastName + " został zarejestrowany.");
                 System.out.println("Pusty sesyjny mail - zapisujemy wartość \"mail\" sesji. Ile zarejestrowanych: " + users.size()
