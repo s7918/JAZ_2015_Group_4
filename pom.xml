@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>JAZ</groupId>
-    <artifactId>JazLab1</artifactId>
+    <artifactId>JAZ_2015_Group_3</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>JazLab1</name>
+    <name>JAZ_2015_Group_3</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
