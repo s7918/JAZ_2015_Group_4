@@ -22,4 +22,6 @@ public class DummyDB {
         systemUsers = new ArrayList<>();
         conferenceUsers = new ArrayList<>();
     }
+    
+    
 }
