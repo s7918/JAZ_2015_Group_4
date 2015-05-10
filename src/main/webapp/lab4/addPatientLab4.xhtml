@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="./JsfTemplate.xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html">
+   
+    <ui:define name="content">
+        <h:form>
+            Imię: <h:inputText /> <br />
+            Nazwisko: <h:inputText /> <br />
+            PESEL: <h:inputText /> <br />
+            Data urodzenia: <h:inputText /> <br />
+            Adres: <h:inputText /> <br />
+            Telefon: <h:inputText /> <br />
+            Waga: <h:inputText /> <br />
+            Wzrost: <h:inputText /> <br />
+            <h:commandButton type="submit" value="Zapisz do bazy" action="/lab4/peopleLab4.xhtml"/> <br />
+        </h:form>
+    </ui:define>
+
+</ui:composition>
