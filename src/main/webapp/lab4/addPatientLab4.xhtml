@@ -3,18 +3,20 @@
 <ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
                 template="./JsfTemplate.xhtml"
                 xmlns:h="http://xmlns.jcp.org/jsf/html">
-   
+
     <ui:define name="content">
         <h:form>
-            Imię: <h:inputText /> <br />
-            Nazwisko: <h:inputText /> <br />
-            PESEL: <h:inputText /> <br />
-            Data urodzenia: <h:inputText /> <br />
-            Adres: <h:inputText /> <br />
-            Telefon: <h:inputText /> <br />
-            Waga: <h:inputText /> <br />
-            Wzrost: <h:inputText /> <br />
-            <h:commandButton type="submit" value="Zapisz do bazy" action="/lab4/peopleLab4.xhtml"/> <br />
+            <h:panelGrid columns="2">
+                Imię: <h:inputText />
+                Nazwisko: <h:inputText />
+                PESEL: <h:inputText />
+                Data urodzenia: <h:inputText />
+                Adres: <h:inputText />
+                Telefon: <h:inputText />
+                Waga: <h:inputText />
+                Wzrost: <h:inputText />
+                <h:commandButton type="submit" value="Zapisz do bazy" action="/lab4/peopleLab4.xhtml"/>
+            </h:panelGrid>
         </h:form>
     </ui:define>
 
